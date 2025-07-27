@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/main.css"></link>
+	</head>
+	<body>
+		<div class="outline">
+			<div class="date">
+				<div class="day">Sunday:</div>
+				<div class="plans">The lobby is closed for the day!</div>
+			</div>
+			<div class="date">
+				<div class="day">Monday:</div>
+				<div class="plans">Hollow Knight</div>
+			</div>
+			<div class="date">
+				<div class="day">Tuesday:</div>
+				<div class="plans">Tetr.io (Tetri league)</div>
+			</div>
+			<div class="date">
+				<div class="day">Wednessday:</div>
+				<div class="plans">TBD</div>
+			</div>
+			<div class="date">
+				<div class="day">Thursday:</div>
+				<div class="plans">The lobby is closed for the day!</div>
+			</div>
+			<div class="date">
+				<div class="day">Friday:</div>
+				<div class="plans">New game Friday! (Slime Rancher)</div>
+			</div>
+			<div class="date">
+				<div class="day">Saturday:</div>
+				<div class="plans">Satisfactory</div>
+			</div>
+		</div>
+		<div class="chainContainer">
+			<img class="chainDivider" src="./img/chains.png"></img>
+		</div>
+		<h4 id="startTime">Theater room is open at <span class="mainTime dropdown" onclick="this.classList.toggle('active')">5:00 pm CST<span class="dropdown_content">3:00 pm PST
+		4:00 pm MT
+		6:00 pm EST
+		8:00 am AEST</span></span> and will end roughly 4-6 hours after</h4>
+		<div class="chainContainer">
+			<img class="chainDivider" src="./img/chains.png"></img>
+		</div>
+		<div class="outline">
+			<div id="legend">Color Key</div>
+			<div class="date2" style="border-top: 2px outset #1A4169;">
+				<div class="key">Future Date</div>
+			</div>
+			<div class="date2 ongoing">
+				<div class="key">Stream Currently Active</div>
+			</div>
+			<div class="date2 today">
+				<div class="key">Current Day</div>
+			</div>
+			<div class="date2 passed">
+				<div class="key">Stream Ended, Or Day Passed</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/luxon.js"></script>
+	<script src="./js/tzConvert.js"></script>
+	<script src="./js/main.js"></script>
+</html>
