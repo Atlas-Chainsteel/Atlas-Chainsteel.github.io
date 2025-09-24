@@ -39,7 +39,12 @@ window.addEventListener('DOMContentLoaded', () => {
 			item.classList.add('passed');
 		} else if (index === now.weekday % 7) {
 			if (now >= eventStart && now < eventEnd) {
-				item.classList.add('today', 'ongoing');
+				if (item.children[1].innerHTML === "The lobby is closed for the day!") {
+					item.classList.add('passed');
+					console.log(item.innerHTML);
+				} else {
+					item.classList.add('today', 'ongoing');
+				}
 			} else if (now < eventStart) {
 				item.classList.add('today');
 			} else {
