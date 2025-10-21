@@ -1,0 +1,41 @@
+:root {
+    font-family: "Times", serif;
+    --lapis: #26619c;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #764b2f;
+    background-image: url("../1000031690.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navBar {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 98%;
+    height: 2.5rem;
+    background: var(--lapis);
+    align-items: stretch;
+}
+
+.sign {
+    border: 2px solid #193335;
+    height: 100%;
+    align-content: center;
+}
