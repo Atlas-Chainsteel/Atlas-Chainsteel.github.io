@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 15rem;
+    max-width: 75%;
+    background: var(--lapis);
+    align-items: stretch;
+}
+
+.ref {
+    border: 2px solid #193335;
+    height: 100%;
+    align-content: center;
+    text-align: center
+}
