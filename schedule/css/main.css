@@ -1,0 +1,76 @@
+@keyframes pulse {
+    from {
+      background-color: var(--lapis);
+      color: var(--gold);
+    }
+
+    to {
+      background-color: #A1BBD4;
+      color: #000000;
+    }
+}
+
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule {
+  table-layout: fixed;
+  background-color: var(--lapis);
+  color: var(--gold);
+  border: 5px outset var(--test);
+  border-radius: 2rem;
+  border-spacing: 0;
+  width: 30rem;
+  max-width: 75%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.day {
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-bottom: 3px solid var(--test);
+    width: 10ch;
+    padding-left: 0.5em;
+}
+
+.day::after {
+    content: "";
+    border-right: 5px solid var(--test);
+    border-radius: 0 1em 1em 0;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+tr:last-child .day, tr:last-child .plans {
+    border-bottom: none;
+}
+
+.plans {
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 3px solid var(--test);
+}
+
+.divide {
+    background-image: url("../chains.png");
+    width: 25rem;
+    height: 1.5rem;
+    max-width: calc(75% - 4rem);
+    background-size: cover;
+    border: none;
+    margin: 0;
+}
+
+.passed {
+    background-color: var(--burnt-lapis);
+    text-decoration: line-through;
+}
+
+.ongoing {
+    animation: 3s infinite alternate pulse;
+}

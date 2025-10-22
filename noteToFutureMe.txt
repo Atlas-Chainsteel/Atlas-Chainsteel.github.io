@@ -1,0 +1,5 @@
+- Making the javascript for the styling of the rows
+- ""      ""   ""        ""  ""  Timestamp
+- credits
+- games page
+- recomended
