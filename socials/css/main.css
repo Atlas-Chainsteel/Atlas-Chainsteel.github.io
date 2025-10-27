@@ -5,12 +5,31 @@
     margin: auto;
     width: 15rem;
     max-width: 75%;
-    background: var(--lapis);
     align-items: stretch;
 }
 
+.sLink {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.sLink:visited {
+    color: var(--gold);
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
 .ref {
-    border: 2px solid #193335;
+    border: 3px outset var(--test);
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    background-color: var(--lapis);
+    overflow: hidden;
     height: 100%;
     align-content: center;
     text-align: center;
