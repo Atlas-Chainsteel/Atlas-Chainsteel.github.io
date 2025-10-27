@@ -1,5 +1,8 @@
+- ADD A BACK TO HOME BUTTON
 - Making the javascript for the styling of the rows
 - ""      ""   ""        ""  ""  Timestamp
+-update socials page
 - credits
+  * remake python Script for embed if stuck on last 2 notes
 - games page
 - recomended
