@@ -1,8 +1,6 @@
 let schedule = document.getElementsByClassName("row");
-const startTime=new Date();
-startTime.setUTCHours(22);
-startTime.setUTCMinutes(0);
-const time = startTime.toLocaleTimeString('timezone', {
+const startTime=new Date("2025-10-01T17:00:00-05:00");
+const time = startTime.toLocaleTimeString('en-US', {
     hour: 'numeric',
     minute: '2-digit',
     hour12: true
@@ -10,9 +8,8 @@ const time = startTime.toLocaleTimeString('timezone', {
 
 document.getElementById("timeStamp").innerHTML = time;
 
-var current = new Date();
-var TZ='America/Chicago'; //Target timezone from server
-current=new Date(Date.parse(current.toLocaleString("en-US", {timeZone: TZ})));
+const current = new Date();
+current=new Date(Date.parse(current.toLocaleString("en-US", {timeZone: 'America/Chicago'})));
 
 for (let i=0; i < schedule.length; i++) {
     if (i<current.getDay()) {
