@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <title>Chainsteel Retreat</title>
@@ -13,13 +13,30 @@
   </head>
   <body>
     <div class="navBar">
-      <div class="sign"><a href="./socials/">Socials</a></div>
-      <div class="sign"><a href="./games/">Games</a></div>
-      <div class="sign"><a href="./schedule/">Schedule</a></div>
-      <div class="sign"><a href="./recs/">Recomended</a></div>
-      <div class="sign"><a href="./credits/">Credits</a></div>
+      <div class="sign" id="socials">Socials</div>
+      <div class="sign" id="games">Games</div>
+      <div class="sign" id="schedule" style="font-size: 1.2rem;">Time<br>Sheet</div>
+      <div class="sign" id="recs">Recomended</div>
+      <div class="sign" id="credits">Credits</div>
     </div>
     <hr>
     <h1 style="text-align: center;">About Me</h1>
+    <script>
+      let b = document.getElementsByClassName("sign");
+      let a = document.getElementById("recs");
+      for (let i = 0; i < b.length; i++) {
+        b[i].addEventListener("click", function() {
+            window.location.href = "./" + b[i].id;
+        });
+      }
+      window.onresize = function() {
+      //console.log(window.innerWidth);
+        if (window.innerWidth < 830) {
+          a.innerHTML = "Advised";
+        } else {
+          a.innerHTML = "Recomended";
+        }
+      };
+    </script>
   </body>
 </html>

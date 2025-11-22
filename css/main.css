@@ -28,13 +28,19 @@ body {
     justify-content: space-evenly;
     margin: auto;
     width: 98%;
-    height: 2.5rem;
-    background: var(--lapis);
+    height: 5rem;
     align-items: stretch;
 }
 
 .sign {
     border: 2px solid #193335;
     height: 100%;
+    width: 10rem;
     align-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    background-image: url("../sign.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

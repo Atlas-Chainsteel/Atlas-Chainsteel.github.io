@@ -1,4 +1,3 @@
 - credits
-  * remake python Script for embed if stuck on last 2 notes
 - games page
 - recomended
