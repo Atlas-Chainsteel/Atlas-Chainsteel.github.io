@@ -57,7 +57,7 @@ tr:last-child .day, tr:last-child .plans {
 }
 
 .divide {
-    background-image: url("../chains.png");
+    background-image: url("../../chains.png");
     width: 25rem;
     height: 1.5rem;
     max-width: calc(75% - 4rem);
