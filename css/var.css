@@ -4,11 +4,12 @@
     --test: #173B5F;
     --burnt-lapis: #0C1F31;
     --light-lapis: #638EB8;
+    --rgba-lapis: rgba(38, 97, 156, 0.5);
 }
 
 .home {
     font-size: 1.5rem;
-    height: 4rem;
+    height: 100%;
     width: 10rem;
     align-content: center;
     text-align: center;
@@ -16,4 +17,19 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.navBar {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 98%;
+    height: 6rem;
+    align-items: stretch;
+}
+
+h1,h2,h3 {
+    margin: 0;
 }

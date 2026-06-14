@@ -21,25 +21,50 @@ body {
     background-position: center;
 }
 
-.navBar {
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 98%;
-    height: 5rem;
-    align-items: stretch;
+.main {
+    margin: 0;
+    position: relative;
+    width: 20rem;
+    min-height: 3rem;
+    padding: 0 3rem 0 3rem;
+    left: calc(50% - 10rem);
+    align-content: center;
+    text-align: center;
 }
+
 
 .sign {
     height: 100%;
     width: 10rem;
     align-content: center;
     text-align: center;
-    padding-top: 1rem;
     background-image: url("../sign.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.sign_top {
+    width: 20rem;
+    height: 32px;
+    background-image: url("../sign_top.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sign_middle {
+    width: 19.45rem;
+    background-image: url("../sign_middle.png");
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.sign_bottom {
+    width: 20rem;
+    height: 32px;
+    background-image: url("../sign_bottom.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
